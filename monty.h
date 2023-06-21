@@ -39,4 +39,24 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ * bus_s - carry values through the program
+ * @lifi: change stack
+ * @arg: argumnet value
+ * @content: line content
+ * @file: pointer to monty file
+ */
+typedef struct bus_s
+{
+	int lifi;
+	char *arg;
+	char *content;
+	FILE *file;
+} bus_t;
+extern bus_t bus;
+
+void f_push(stack_t **head, unsigned int counter);
+void f_pall(stack_t **head, unsigned int counter);
+void f_pint(stack_t **head, unsigned int counter);
+
 #endif
