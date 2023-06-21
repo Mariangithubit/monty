@@ -11,6 +11,7 @@ void f_div(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
 	int len = 0, x;
+
 	h = *head;
 	while (h)
 	{
