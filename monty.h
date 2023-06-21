@@ -1,13 +1,13 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-#inlcude "stdio.h"
-#inlcude "stdlib.h"
-#inlcude "unistd.h"
-#inlcude "string.h"
-#inlcude "ctype.h"
-#inlcude "sys/types.h"
-#inlcude "fcntl.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "unistd.h"
+#include "string.h"
+#include "ctype.h"
+#include "sys/types.h"
+#include "fcntl.h"
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -58,5 +58,16 @@ extern bus_t bus;
 void f_push(stack_t **head, unsigned int counter);
 void f_pall(stack_t **head, unsigned int counter);
 void f_pint(stack_t **head, unsigned int counter);
+void f_mul(stack_t **head, unsigned int counter);
+void f_nop(stack_t **head, unsigned int counter);
+void f_sub(stack_t **head, unsigned int counter);
+void f_swap(stack_t **head, unsigned int counter);
+void f_pop(stack_t **head, unsigned int counter);
+void f_pchar(stack_t **head, unsigned int counter);
+void f_pstr(stack_t **head, unsigned int counter);
+void f_rotl(stack_t **head, __attribute__((unused)) unsigned int counter);
+void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
+void f_stack(stack_t **head, unsigned int counter);
+void f_queue(stack_t **head, unsigned int counter);
 
 #endif
