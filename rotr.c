@@ -12,15 +12,15 @@ void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter)
 	
 	if (*head == NULL || (*head)->next == NULL)
         {
-		return (0);
+		return;
         }
-	while (temp->next)
-        {
-		temp = temp->next;
-        }
-	temp->next = *head;
+      while (temp->next)
+        {       
+                temp = temp->next;
+        }       
+        temp->next = *head;
 	temp->prev->next = NULL;
 	temp->prev = NULL;
-	(*head)->prev = temp;
-        (*head) = h;
+        (*head)->prev = temp;
+        (*head) = temp;
 }
