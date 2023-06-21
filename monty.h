@@ -54,9 +54,15 @@ typedef struct bus_s
 } bus_t;
 extern bus_t bus;
 
+int main(int argc, char *argv[]);
+void free_stack(stack_t *head);
+void add_node(stack_t **head, int n);
 void f_push(stack_t **head, unsigned int counter);
 void f_pall(stack_t **head, unsigned int counter);
 void f_pint(stack_t **head, unsigned int counter);
+void f_add(stack_t **head, unsigned int counter);
+void f_div(stack_t **head, unsigned int counter);
+void f_mod(stack_t **head, unsigned int counter);
 void f_mul(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
 void f_sub(stack_t **head, unsigned int counter);
