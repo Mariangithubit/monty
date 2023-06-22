@@ -2,7 +2,7 @@
 
 /**
  * f_nop - doesn’t do anything.
- * @head: the head of stack 
+ * @head: the head of stack
  * @counter: line_number
  * Return: void
  */

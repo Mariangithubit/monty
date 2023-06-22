@@ -2,7 +2,7 @@
 
 /**
  * f_pop - removes the top element of the stack
- * @head: the head of stack 
+ * @head: the head of stack
  * @counter: line_number
  * Return: void
  */
