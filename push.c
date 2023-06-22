@@ -40,5 +40,5 @@ void f_push(stack_t **head, unsigned int counter)
 	if (bus.lifi == 0)
 		add_node(head, n);
 	else
-		addqueue(head, n);
+		add_queue(head, n);
 }
