@@ -6,7 +6,7 @@
  * @counter: line_number
  * Return: void
  */
-void f_push(stack_t **head, unsigned int counter)
+void f_nop(stack_t **head, unsigned int counter)
 {
 	(void)counter;
 	(void)head;
