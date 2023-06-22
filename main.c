@@ -1,6 +1,5 @@
 #include "monty.h"
 bus_t bus = {NULL, NULL, NULL, 0};
-
 /**
  * main - code intepreter
  * @argc: count args
@@ -26,7 +25,7 @@ int main(int argc, char *argv[])
 	if (!file)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
-                exit(EXIT_FAILURE);
+		exit(EXIT_FAILURE);
 	}
 	while (read_line > 0)
 	{
@@ -38,7 +37,7 @@ int main(int argc, char *argv[])
 		{
 			execute(content, &stack, counter, file);
 		}
-		free (content);
+		free(content);
 	}
 	free_stack(stack);
 	fclose(file);

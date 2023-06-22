@@ -14,7 +14,7 @@ void f_queue(stack_t **head, unsigned int counter)
 }
 
 /**
- * add_queue - add node to the nd of stack
+ * add_queue - add node to the end of stack
  * @head: the header
  * @n: new vlaue
  * Retrun: void

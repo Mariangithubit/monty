@@ -7,11 +7,11 @@
 void free_stack(stack_t *head)
 {
 	stack_t *x = head;
-	
+
 	while (head)
-        {
+	{
 		x = head->next;
 		free(head);
 		head = x;
-        }
+	}
 }
