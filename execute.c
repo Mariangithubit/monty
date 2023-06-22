@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * execute - excute the opcode
+ * execute - execute the opcode
  * @content: line content
  * @stack: stack
  * @counter: count the number of lines
