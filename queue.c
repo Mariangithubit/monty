@@ -22,7 +22,7 @@ void f_queue(stack_t **head, unsigned int counter)
 void add_queue(stack_t **head, int n)
 {
 	stack_t *new_node = malloc(sizeof(stack_t));
-	stack_t *h = *head;
+	stack_t *x = *head;
 
 	if (new_node == NULL)
 	{
@@ -30,14 +30,19 @@ void add_queue(stack_t **head, int n)
 	}
 	new_node->n = n;
 	new_node->next = NULL;
-	if (h == NULL)
+	if (x)
+	{
+		while (x->next)
+			x = x->next;
+	}
+	if (x == NULL)
 	{
 		*head = new_node;
 		new_node->prev = NULL;
 	}
 	else
 	{
-		h->next = new_node;
-		new_node->prev = h;
+		x->next = new_node;
+		new_node->prev = x;
 	}
 }
