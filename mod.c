@@ -4,7 +4,7 @@
 * f_mod - computes the rest of the division
  * @head: the head of stack
  * @counter: line_number
- * Return: void
+ * Return: no return
  */
 void f_mod(stack_t **head, unsigned int counter)
 {

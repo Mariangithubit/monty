@@ -4,7 +4,7 @@
  * f_pstr - prints the string at the top of the stack
  * @head: the head of stack
  * @counter: line_number
- * Return: void
+ * Return: no return
  */
 void f_pstr(stack_t **head, unsigned int counter)
 {

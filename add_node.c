@@ -4,7 +4,7 @@
  * add_node - add node to stack
  * @head: head of stack
  * @n: new element
- * Return: void
+ * Return: no return
  */
 void add_node(stack_t **head, int n)
 {

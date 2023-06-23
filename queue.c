@@ -4,7 +4,7 @@
  * f_queue -  sets the format of the data to a queue (FIFO)
  * @head: the head of stack
  * @counter: line_number
- * Return: void
+ * Return: no return
  */
 void f_queue(stack_t **head, unsigned int counter)
 {
@@ -17,7 +17,7 @@ void f_queue(stack_t **head, unsigned int counter)
  * add_queue - add node to the end of stack
  * @head: the header
  * @n: new vlaue
- * Retrun: void
+ * Retrun: no return
  */
 void add_queue(stack_t **head, int n)
 {
@@ -35,7 +35,7 @@ void add_queue(stack_t **head, int n)
 		while (x->next)
 			x = x->next;
 	}
-	if (x == NULL)
+	if (!x)
 	{
 		*head = new_node;
 		new_node->prev = NULL;

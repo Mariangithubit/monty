@@ -1,5 +1,8 @@
 #include "monty.h"
+#define _GNU_SOURCE
+
 bus_t bus = {NULL, NULL, NULL, 0};
+
 /**
  * main - code intepreter
  * @argc: count args

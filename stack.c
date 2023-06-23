@@ -4,7 +4,7 @@
  * f_stack - sets the format of the data to a stack (LIFO0
  * @head: the head of stack
  * @counter: line_number
- * Return: void
+ * Return: no return
  */
 void f_stack(stack_t **head, unsigned int counter)
 {
