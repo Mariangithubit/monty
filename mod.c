@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* f_mod - computes the rest of the division
+ * f_mod - computes the rest of the division
  * @head: the head of stack
  * @counter: line_number
  * Return: no return
@@ -9,7 +9,7 @@
 void f_mod(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
-	int len = 0, x;
+	int len = 0, temp;
 
 	h = *head;
 	while (h)
@@ -34,8 +34,8 @@ void f_mod(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	x = h->next->n % h->n;
-	h->next->n = x;
+	temp = h->next->n % h->n;
+	h->next->n = temp;
 	*head = h->next;
 	free(h);
 }
