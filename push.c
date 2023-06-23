@@ -4,7 +4,7 @@
  * f_push - add element to stack
  * @head: stack head
  * @counter: line_number
- * Return: void
+ * Return: no return
  */
 void f_push(stack_t **head, unsigned int counter)
 {

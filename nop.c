@@ -4,7 +4,7 @@
  * f_nop - doesn’t do anything.
  * @head: the head of stack
  * @counter: line_number
- * Return: void
+ * Return: no return
  */
 void f_nop(stack_t **head, unsigned int counter)
 {
