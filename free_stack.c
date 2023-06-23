@@ -3,16 +3,17 @@
 /**
  * free_stack - free linked list
  * @head: head of stack
+ * Return: no return
  */
 void free_stack(stack_t *head)
 {
-	stack_t *x;
+	stack_t *temp;
        
-	x = head;
+	temp = head;
 	while (head)
 	{
-		x = head->next;
+		temp = head->next;
 		free(head);
-		head = x;
+		head = temp;
 	}
 }
