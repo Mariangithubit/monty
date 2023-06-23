@@ -2,7 +2,7 @@
 
 /**
  * f_swap - swaps the top two elements of the stack
- * @head: the head of stack 
+ * @head: the head of stack
  * @counter: line_number
  * Return: void
  */
@@ -12,7 +12,7 @@ void f_swap(stack_t **head, unsigned int counter)
 	int len = 0, x;
 
 	h = *head;
-	while(h)
+	while (h)
 	{
 		h = h->next;
 		len++;
