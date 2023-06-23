@@ -6,7 +6,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
 /**
  * main - code intepreter
  * @argc: count args
- * @argv: value
+ * @argv: arg vector
  * Return: 0
  */
 int main(int argc, char *argv[])
