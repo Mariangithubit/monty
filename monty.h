@@ -40,17 +40,17 @@ typedef struct instruction_s
 
 /**
  * struct bus_s - carry values through the program
- * @lifi: change stack
  * @arg: argumnet value
- * @content: line content
  * @file: pointer to monty file
+ * @content: line content
+ * @lifi: flag change stack
  */
 typedef struct bus_s
 {
-	int lifi;
 	char *arg;
-	char *content;
 	FILE *file;
+	char *content;
+	int lifi;
 } bus_t;
 extern bus_t bus;
 
