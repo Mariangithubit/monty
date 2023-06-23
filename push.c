@@ -12,7 +12,7 @@ void f_push(stack_t **head, unsigned int counter)
 
 	if (bus.arg)
 	{
-		if (bus.arg[0] == '_')
+		if (bus.arg[0] == '-')
 			i++;
 		for (; bus.arg[i] != '\0'; i++)
 		{
